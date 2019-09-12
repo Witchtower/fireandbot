@@ -2,21 +2,6 @@ const Base64 = require('js-base64').Base64
 const request = require('request')
 const parseXML = require('xml2js').parseString;
 
-function getItemInfoDe(itemId, callback){
-    url = 'https://de.classic.wowhead.com/item='
-    url_pf = '&xml'
-    console.log(url+itemId+url_pf)
-    request(url+itemId+url_pf, (err, res, body)=>{
-        if (err) {
-            console.log(err.message)
-            return
-        }
-        if (res && body) {
-            callback(parseXML(body))
-        }
-    })
-}
-
 const wasnda = async (message, db) => {
   try {
     rows = wasnda_query(db)

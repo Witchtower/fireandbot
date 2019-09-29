@@ -1,5 +1,6 @@
 // update inventory by args or by attachment
 const request_promise = require('request-promise')
+const request = require('request')
 const Base64 = require('js-base64').Base64
 
 const help_message = `Du musst schon diesen langen, komplizierten \

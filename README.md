@@ -48,8 +48,10 @@ clone repo
 
 make .env file in cloned folder with contents:
 
-```BOT_TOKEN=<yourdiscordbottoken>
-DATABASE=fab.db```
+```
+BOT_TOKEN=<yourdiscordbottoken>
+DATABASE=fab.db
+```
 
 create database according to the ```create_db.sql``` file with sqlite3
 

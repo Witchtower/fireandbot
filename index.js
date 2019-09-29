@@ -8,8 +8,6 @@ client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`)
 })
 
-
-
 fs.readdir('./events/', (err, files) => {
     files.forEach(file => {
       const eventHandler = require(`./events/${file}`)

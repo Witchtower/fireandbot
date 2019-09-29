@@ -1,21 +1,30 @@
-fab = require('../fab')
+frame = require('../fab/frame').discordFrame
+inventory = require('../fab/inventory')
+chars = require('../fab/chars')
+stats = require('../fab/stats')
+update = require('../fab/update')
 
 module.exports = (client, message, db) => {
   
   console.log('message.js called')
-  if(message.content.startsWith('!wasnda')){
-    (async (message, db) => {
-      await fab.wasnda(message, db)
-    })(message, db)
+  if(message.content.startsWith('!inventory')){
+    (async (message, db, fn) => {
+      await frame(message, db, fn)
+    })(message, db, inventory)
   }
-  else if (message.content.startsWith('!itisknown')){
-    (async (message, db) => {
-      await fab.itisknown(message, db)
-    })(message, db)
-    
-  } else if (message.content.startsWith('!letitbeknown')){
-    (async (message, db) => {
-      await fab.letitbeknown(message, db)
-    })(message, db)
+  if(message.content.startsWith('!chars')){
+    (async (message, db, fn) => {
+      await frame(message, db, fn)
+    })(message, db, chars)
+  }
+  if(message.content.startsWith('!stats')){
+    (async (message, db, fn) => {
+      await frame(message, db, fn)
+    })(message, db, stats)
+  }
+  else if (message.content.startsWith('!update')){
+    (async (message, db, fn) => {
+      await frame(message, db, fn)
+    })(message, db, update)
   }
 }

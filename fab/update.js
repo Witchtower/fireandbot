@@ -2,6 +2,7 @@
 const request_promise = require('request-promise')
 const request = require('request')
 const Base64 = require('js-base64').Base64
+const parseXML = require('xml2js').parseString;
 
 const help_message = `Du musst schon diesen langen, komplizierten \
 Text aus dem Addon kopieren und hier einfügen...\n\

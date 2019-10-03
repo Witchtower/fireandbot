@@ -3,6 +3,7 @@ inventory = require('../fab/inventory')
 chars = require('../fab/chars')
 stats = require('../fab/stats')
 update = require('../fab/update')
+role = require('../role.js')
 
 module.exports = (client, message, db) => {
   
@@ -26,5 +27,10 @@ module.exports = (client, message, db) => {
     (async (message, db, fn) => {
       await frame(message, db, fn)
     })(message, db, update)
+  }
+  else if(message.content.startsWith('!role')){
+    (async (message, db, fn) => {
+      await frame(message, db, fn)
+    })(message, db, role)
   }
 }

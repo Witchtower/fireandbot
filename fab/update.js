@@ -100,7 +100,7 @@ const update_item_names = async (db) => {
     }
     code = args[1]
     if (message.attachments.size > 0) {
-        code = await request_promise(attachment.url)
+        code = await request_promise(attachments[0].url)
     }
     [charname, ...items] = parse(code)
     charname = charname.split(',')[0]

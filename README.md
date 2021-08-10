@@ -32,6 +32,8 @@ database and after a little while (give the bot some time to fetch item names fr
 
 ### Planned features
 
+i'm no longer working on this project, don't wait for these updates: they'll probably never come
+
 * track item requests from players to be able to
 * display bankchar wise "send x item to <player>" lists
 

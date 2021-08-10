@@ -12,7 +12,7 @@
 ### Display inventory
 
 * type ```!inventory``` to display summary of all items held by all bankchars
-* type ```!inventory <charname>``` to display items held by specific character
+* type ```!inventory <charname1> <charname2> ...``` to display a summary of items held by specific characters
 
 ### Display bankchars
 
@@ -32,7 +32,6 @@ database and after a little while (give the bot some time to fetch item names fr
 
 ### Planned features
 
-* display combined inventory of multiple specified chars with ```!inventory <charname1> <charname2> ...```
 * track item requests from players to be able to
 * display bankchar wise "send x item to <player>" lists
 

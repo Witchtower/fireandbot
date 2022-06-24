@@ -1,5 +1,7 @@
 # fireandbot - Discord bot of the Fire and Blood Classic Guild @Razorfen
 
+*With the introduction of Guild Banks in TBC Classic this Bot has lost it's purpose.*
+
 ## Features / HowTo
 
 ### Export Bankchar data with Guild Bank Classic AddOn
